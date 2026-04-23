@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  color: #e9a655;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  color: rgb(195, 196, 201);
+  font-size: 24px;
+}
+h5 {
+  font-size: 12px;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+h6 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  font-family: "Iosevka Charon Mono", sans-serif;
+  width: 150px;
+  letter-spacing: 2px;
+}
+
+.en-tete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-forme {
+  width: 100%;
+  height: auto;
+}
+.image-forme-desktop {
+  display: none;
+}
+
+.titre-h1 {
+  font-weight: bold;
+}
+
+.New {
+  background-color: #00001a;
+  color: white;
+  padding: 16px;
+  width: 100%;
+
+  & > article {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.titres-h3-color {
+  color: white;
+}
+.section-01-02-03 {
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  & p {
+    color: rgb(132, 131, 139);
+  }
+
+  & article {
+    max-width: 370px;
+  }
+}
+
+.separateur {
+  border-bottom: 1px solid white;
+  height: 1px;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-pc-retro,
+.image-laptop-top,
+.image-gaming-growth {
+  width: 96px;
+  height: auto;
+}
+.pc-retro,
+.laptop-top,
+.gaming-growth {
+  display: flex;
+  flex-direction: row;
+}
+.block-pc-retro,
+.block-laptop-top,
+.block-gaming-growth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.block-pc-retro {
+  
+}
+.menu-burger {
+  width: 32px;
+  height: auto;
+}
+.list-none {
+  display: none;
+  color: black;
+}
+
+@media screen and (min-width: 640px) {
+}
+
+@media screen and (min-width: 768px) {
+  .image-forme {
+    display: none;
+  }
+  .image-forme-desktop {
+    display: flex;
+    width: 100%;
+  }
+   .New {
+    max-width: 500px;
+   }
+   .enorme-section {
+    align-items: center;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 72px;
+  }
+  a {
+    text-decoration: none;
+  }
+  button:hover {
+    background-color: black;
+  }
+  h6 {
+    font-size: 56px;
+  }
+  .image-forme-desktop {
+    width: 550px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .image-pc-retro,
+  .image-laptop-top,
+  .image-gaming-growth {
+    width: auto;
+    height: 150px;
+  }
+  .titres-h3-color:hover {
+    color: #e9a655;
+  }
+  .titres-h5-color:hover {
+    color: rgb(229, 124, 114);
+  }
+  .titres-en-tete:hover {
+    color: rgb(229, 124, 114);
+  }
+  .sur-en-tete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .list-none {
+    display: flex;
+    gap: 16px;
+  }
+
+  .section-01-02-03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unset;
+  }
+  .container-petit {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .container-moyen {
+    display: flex;
+    flex-direction: row;
+  }
+  .haut-de-page-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .enorme-section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1536px) {
+}
